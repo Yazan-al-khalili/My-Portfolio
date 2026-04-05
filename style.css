@@ -626,7 +626,7 @@ footer p {
     .nav-links.active { left: 0; }
     .nav-links li { margin: 2rem 0; }
     .nav-links a { font-size: 2rem; }
-    .skills-grid { grid-template-columns: 1fr; }
+    .skills-card-grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 5rem; }
     .exp-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
