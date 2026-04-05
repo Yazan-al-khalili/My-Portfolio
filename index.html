@@ -1,335 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="logo"><span>Yaz</span>an</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazan Alkhalili | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">YA<span>.</span></a>
+            <div class="menu-icon" id="menu-icon">
+                <i class="bx bx-menu"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-      <nav class="navbar">
-        <a href="#home"><span>Home</span></a>
-        <a href="#about"><span>About Me</span></a>
-        <a href="#education"><span>Education</span></a>
-        <a href="#projects"><span>Projects</span></a>
-        <a href="#courses"><span>Courses</span></a>
-      </nav>
+    <!-- Hero Section -->
+    <header class="hero section" id="home">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <span class="label">ASPIRING DEVELOPER · KARLSTAD</span>
+                <h1>Yazan Alkhalili</h1>
+                <h3 class="hero-subtitle">I'm a <span id="typing-text"></span></h3>
+                <p class="hero-bio">
+                    Computer engineering student with a passion for building clean, efficient, and user-centered digital solutions.
+                </p>
+                <div class="hero-btns">
+                    <a href="CV.pdf" class="btn-text" download>Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <div class="img-frame">
+                    <img src="Yazan Alkhalili.jpg" alt="Yazan Alkhalili">
+                </div>
+            </div>
+        </div>
+        <div class="grain-overlay"></div>
     </header>
 
-    <section class="home" id="home">
-      <div class="home-img"><img src="Yazan Alkhalili.jpg" alt="" /></div>
-
-      <div class="home-content">
-        <h1>It's<span>Yazan</span></h1>
-        <h3 class="text-animation">I'm a <span id="typing-text"></span></h3>
-
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/yazan-khalili/" target="_blank"
-            ><i class="bx bxl-linkedin-square"></i
-          ></a>
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <span class="label">OM MIG</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid fade-in">
+                <div class="about-text">
+                    <p>
+                        I am a driven computer engineering student at Karlstad University with a strong foundation in both theoretical and practical aspects of the field. My journey has allowed me to develop skills in programming, data analysis, and systems development.
+                    </p>
+                    <p>
+                        Beyond my technical expertise, I have developed strong problem-solving and teamwork skills through my experience in fast-paced environments. I thrive both independently and in collaborative teams, leveraging agile methodologies to create innovative solutions.
+                    </p>
+                </div>
+                <div class="about-details">
+                    <ul>
+                        <li><strong>Location:</strong> Karlstad, Sweden</li>
+                        <li><strong>Email:</strong> yazankhalili77@gmail.com</li>
+                        <li><strong>Focus:</strong> Software Engineering</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- About Me -->
-    <section class="about" id="about">
-      <div class="about-container">
-        <div class="about-box">
-          <h2>About Me</h2>
-          <p>
-            I am Yazan Alkhalili, a driven computer engineering student at
-            Karlstad University with a strong passion for technology and
-            problem-solving. My academic journey has provided me with a solid
-            foundation in both theoretical and practical aspects of the field,
-            allowing me to develop skills in programming, data analysis,
-            database management, and systems development. I am always eager to
-            explore new technologies and methodologies, focusing on applying my
-            knowledge to create efficient, innovative, and user-centered
-            solutions. <br />
-            <br />
-            With experience in both frontend and backend development, I have
-            gained a comprehensive understanding of how various technologies
-            seamlessly integrate. I thrive both independently and in
-            collaborative environments, leveraging agile methodologies to
-            maintain structured yet flexible workflows in my projects. <br />
-            <br />
-            Beyond my technical expertise, I have developed strong
-            problem-solving and teamwork skills through my experience as a
-            warehouse worker and grocery associate. These roles have
-            strengthened my ability to work efficiently under pressure, adapt to
-            dynamic environments, and collaborate effectively with diverse
-            teams. My hands-on experience in fast-paced settings has also
-            enhanced my organizational skills and attention to detail, qualities
-            that I carry into my work as a computer engineer. <br />
-            <br />
-          </p>
-          <ul class="about-info">
-            <li><strong>Name:</strong> Yazan Alkhalili</li>
-            <li><strong>Email:</strong> yazankhalili77@gmail.com</li>
-            <li><strong>Current Location:</strong> Karlstad, Sweden</li>
-            <li><strong>Phone Number:</strong> +46 72 925 03 48</li>
-          </ul>
-        </div>
-
-        <div class="skills-box">
-          <h2>My Skills</h2>
-          <div class="skill">
-            <p>HTML & CSS (Bootstrap) <span>80%</span></p>
-            <div class="progress-bar">
-              <div class="progress html-css"></div>
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <span class="label">KOMPETENSER</span>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-card-grid fade-in">
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    <span>PYTHON</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+                    <span>C</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                    <span>C#</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET">
+                    <span>.NET</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="SQL">
+                    <span>SQL</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML/CSS">
+                    <span>HTML/CSS</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    <span>JAVA</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <span>REACT</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    <span>NODE.JS</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Cloud Computing">
+                    <span>CLOUD COMPUTING</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Cybersecurity">
+                    <span>CYBERSECURITY</span>
+                </div>
             </div>
-          </div>
-          <div class="skill">
-            <p>JAVASCRIPT <span>60%</span></p>
-            <div class="progress-bar">
-              <div class="progress javascript"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <p>C <span>80%</span></p>
-            <div class="progress-bar"><div class="progress C"></div></div>
-          </div>
-          <div class="skill">
-            <p>C# <span>70%</span></p>
-            <div class="progress-bar"><div class="progress csharp"></div></div>
-          </div>
-          <div class="skill">
-            <p>PYTHON <span>80%</span></p>
-            <div class="progress-bar"><div class="progress python"></div></div>
-          </div>
-          <div class="skill">
-            <p>JAVA <span>60%</span></p>
-            <div class="progress-bar"><div class="progress java"></div></div>
-          </div>
-          <div class="skill">
-            <p>SQL <span>80%</span></p>
-            <div class="progress-bar"><div class="progress sql"></div></div>
-          </div>
         </div>
-      </div>
-
-      <div class="cv-download">
-        <h1>Resume</h1>
-        <p>
-          Download my CV for a complete overview of my experiences and skills.
-        </p>
-        <a
-          href="Yazan-Khalili-CV.pdf"
-          download="Yazan_Khalili_CV.pdf"
-          class="cv-button"
-        >
-          <i class="bx bx-download"></i> Download CV
-        </a>
-      </div>
     </section>
 
     <!-- Education Section -->
-    <section class="education" id="education">
-      <h2 class="section-title">Education</h2>
-      <div class="education-container">
-        <!-- Education Entry 1 -->
-        <div class="education-box">
-          <h3>Master of Science in Computer Engineering</h3>
-          <p class="university">Karlstad University, Sweden</p>
-          <p class="year">2022 - 2027</p>
-          <p>
-            Currently pursuing a Master of Science in Computer Engineering at
-            Karlstad University, where I am building a strong foundation in
-            software development, machine learning, cloud computing, and
-            cybersecurity. This program has provided me with both theoretical
-            knowledge and hands-on experience, allowing me to develop critical
-            problem-solving skills, optimize system performance, and implement
-            innovative technologies.
-            <br />
-            <br />
-            Through project-based coursework, I have gained practical experience
-            in software engineering principles, data analysis, and network
-            security, preparing me to tackle complex challenges in modern
-            computing environments. My studies emphasize collaborative
-            problem-solving, agile methodologies, and efficient software design,
-            ensuring that I can contribute effectively to dynamic and fast-paced
-            development teams.
-          </p>
+    <section class="education section" id="education">
+        <div class="container">
+            <span class="label">UTBILDNING</span>
+            <h2 class="section-title">Education</h2>
+            <div class="timeline fade-in">
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2027</div>
+                    <div class="timeline-content">
+                        <h3>MSc in Computer Engineering</h3>
+                        <p class="institution">Karlstad University</p>
+                        <p>Building a strong foundation in software development, machine learning, cloud computing, and cybersecurity. The program provides both theoretical knowledge and hands-on experience, focusing on critical problem-solving skills, system performance optimization, and the implementation of innovative technologies. Through project-based coursework, I am gaining practical experience in software engineering principles and network security, preparing for complex challenges in modern computing environments.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>BSc in Computer Engineering</h3>
+                        <p class="institution">Karlstad University</p>
+                        <p>Gained expertise in algorithms, data structures, programming, operating systems, and networking. The curriculum focused on software development, embedded systems, and database management, bridging both hardware and software domains. My studies emphasized collaborative problem-solving, agile methodologies, and efficient software design.</p>
+                        <p>Thesis with Inera Test och utveckling AB: Developed and enhanced a web application for managing healthcare test subjects, applying practical problem-solving to deliver high-quality, industry-relevant solutions.</p>
+                        <a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A2031559&dswid=-2367" target="_blank" class="link-btn">View Thesis <i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Education Entry 2 -->
-        <div class="education-box">
-          <h3>Bachelor of Science in Computer Engineering</h3>
-          <p class="university">Karlstad University, Sweden</p>
-          <p class="year">2022 - 2025</p>
-          <p>
-            During my Bachelor's in Computer Engineering, I gained expertise in algorithms, data structures, programming, operating systems, and networking. The curriculum focused on software development, embedded systems, and database management, equipping me with a strong technical skillset bridging both hardware and software domains.
-            <br />
-            <br />I completed my Bachelor’s thesis in January 2026 in collaboration with Inera Test och utveckling AB, where I further applied my knowledge to a real-world problem by developing and enhancing a web application for managing and booking test subjects in healthcare. This project strengthened my abilities in practical problem-solving, software development, and delivering high-quality, industry-relevant solutions, preparing me for advanced studies or a professional career in computer engineering.
-          </p>
-          <a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A2031559&dswid=-2367" target="_blank" class="thesis-link">
-            <i class="bx bx-link-external"></i> View Thesis
-          </a>
-        </div>
-      </div>
     </section>
+
     <!-- Projects Section -->
-    <section class="projects" id="projects">
-      <h2 class="section-title">Projects</h2>
-      <p class="coming-soon">To Be Continued... Project details coming soon (GitHub)!</p>
+    <section class="projects section" id="projects">
+        <div class="container">
+            <span class="label">PROJEKT</span>
+            <h2 class="section-title">Featured Work</h2>
+            <div class="coming-soon fade-in">
+                <div class="coming-soon-box">
+                    <i class="bx bx-code-block"></i>
+                    <p>Projects coming soon (GitHub)!</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="courses" id="courses">
-      <h2 class="section-title">Courses</h2>
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <span class="label">ERFARENHET</span>
+            <h2 class="section-title">Work History</h2>
+            <div class="experience-list fade-in">
+                <div class="exp-item hotspot-exp">
+                    <div class="exp-header">
+                        <div class="exp-role-group">
+                            <h3>Systemutvecklare</h3>
+                            <p class="exp-company">Hotspot Kau · Part-time</p>
+                        </div>
+                        <span class="exp-date">Oct 2025 - Feb 2026</span>
+                    </div>
+                    <p class="exp-location"><i class="bx bx-map"></i> Karlstad, Sweden · Hybrid</p>
+                    <div class="exp-content">
+                        <p>
+                            Som systemutvecklare i projektgruppen för Hotspot Kau har jag fokuserat på att förbättra webbapplikationen och bidragit till utvecklingen av den nya hemsidan. Genom arbetet har jag fördjupat mina kunskaper inom React och TypeScript samt fått praktisk erfarenhet av versionshantering i Git. Rollen har inneburit ett nära samarbete i team där jag lärt mig vikten av god planering och strukturerad utveckling för att skapa stabila digitala lösningar.
+                        </p>
+                        
+                        <div class="recognition-box">
+                            <div class="recognition-content">
+                                <h4>Recognition for Technical Excellence – Hotspot 2026</h4>
+                                <p>Thrilled to be recognized for my contributions! Building technical solutions for such a dynamic career fair was a pleasure.</p>
+                                <div class="recognition-img">
+                                    <img src="Certificate.jpeg" alt="Hotspot 2026 Recognition for Technical Excellence">
+                                </div>
+                            </div>
+                        </div>
 
-      <h3 class="course-category-title">Software Development</h3>
-      <div class="courses-grid">
-        <div class="course-box">
-          <h3>Programming Techniques</h3>
-          <p>DVGA01</p>
+                        <div class="exp-skills">
+                            <span class="badge mini">Git</span>
+                            <span class="badge mini">JavaScript</span>
+                            <span class="badge mini">React</span>
+                            <span class="badge mini">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="course-box">
-          <h3>Software Development Methodology</h3>
-          <p>DVGA02</p>
-        </div>
-        <div class="course-box">
-          <h3>Data Structures and Algorithms</h3>
-          <p>DVGB03</p>
-        </div>
-        <div class="course-box">
-          <h3>Software Engineering</h3>
-          <p>DVGC22</p>
-        </div>
-        <div class="course-box">
-          <h3>Sustainable Computing</h3>
-          <p>DVGB16</p>
-        </div>
-        <div class="course-box">
-          <h3>C#.NET</h3>
-          <p>DVGB07</p>
-        </div>
-        <div class="course-box">
-          <h3>Programming Languages</h3>
-          <p>DVGC01</p>
-        </div>
-        <div class="course-box">
-          <h3>Software Testing Foundations</h3>
-          <p>DVGB17</p>
-        </div>
-      </div>
-
-      <h3 class="course-category-title">Mathematics</h3>
-      <div class="courses-grid">
-        <div class="course-box">
-          <h3>Discrete Mathematics</h3>
-          <p>MAGA55</p>
-        </div>
-        <div class="course-box">
-          <h3>Linear Algebra</h3>
-          <p>MAGA53</p>
-        </div>
-        <div class="course-box">
-          <h3>Foundation course in Mathematics</h3>
-          <p>MAGA51</p>
-        </div>
-        <div class="course-box">
-          <h3>Stochastic Methods</h3>
-          <p>MAGB64</p>
-        </div>
-        <div class="course-box">
-          <h3>Calculus and Geometry</h3>
-          <p>MAGA52</p>
-        </div>
-      </div>
-
-      <h3 class="course-category-title">Computer Engineering & Hardware</h3>
-      <div class="courses-grid">
-        <div class="course-box">
-          <h3>Electrical Principles</h3>
-          <p>ELGA17</p>
-        </div>
-        <div class="course-box">
-          <h3>Digital Electronics</h3>
-          <p>ELGA02</p>
-        </div>
-        <div class="course-box">
-          <h3>Computer Engineering</h3>
-          <p>DVGA03</p>
-        </div>
-        <div class="course-box">
-          <h3>Operating Systems</h3>
-          <p>DVGB01</p>
-        </div>
-        <div class="course-box">
-          <h3>Embedded Systems</h3>
-          <p>DVGB15</p>
-        </div>
-      </div>
-
-      <h3 class="course-category-title">Computer Science & Theory</h3>
-      <div class="courses-grid">
-        <div class="course-box">
-          <h3>Computer Networking I</h3>
-          <p>DVGB02</p>
-        </div>
-        <div class="course-box">
-          <h3>Computer Security I</h3>
-          <p>DVGC19</p>
-        </div>
-        <div class="course-box">
-          <h3>Databases</h3>
-          <p>DVGA21</p>
-        </div>
-        <div class="course-box">
-          <h3>Computer Science - Degree project / Bachelor´s project</h3>
-          <p>DVGC25</p>
-        </div>
-        <div class="course-box">
-          <h3>Systems modeling and simulation</h3>
-          <p>DVAD27</p>
-        </div>
-        <div class="course-box">
-          <h3>Internet Security and Privacy</h3>
-          <p>DVAD23</p>
-        </div>
-        <div class="course-box">
-          <h3>Theoretical Computer Science</h3>
-          <p>DVGA17</p>
-        </div>
-        <div class="course-box">
-          <h3>Ethical hacking</h3>
-          <p>DVAD25</p>
-        </div>
-        <div class="course-box">
-          <h3>Distributed Systems and Cloud Computing</h3>
-          <p>DVAD26</p>
-        </div>
-      </div>
-      
-      <h3 class="course-category-title">Data Science</h3>
-      <div class="courses-grid">
-        <div class="course-box">
-          <h3>Experimentation and data analysis</h3>
-          <p>FYGA25</p>
-        </div>
-      </div>
-
-      <h3 class="course-category-title">Professional Development & Ethics</h3>
-      <div class="courses-grid">
-        <div class="course-box">
-          <h3>Data Ethics</h3>
-          <p>MKGA99</p>
-        </div>
-        <div class="course-box">
-          <h3>Projects and leadership for engineers</h3>
-          <p>IEGA08</p>
-        </div>
-      </div>
     </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <span class="label">KONTAKT</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper fade-in">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="cae5b6a6-3f4f-45a2-aaf3-68baa838f145">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message <i class="bx bx-send"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Yazan Alkhalili. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/yazan-khalili/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Yazan-al-khalili" target="_blank"><i class="bx bxl-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <script src="animation.js"></script>
-  </body>
+</body>
 </html>
