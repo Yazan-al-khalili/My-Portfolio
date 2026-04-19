@@ -416,6 +416,113 @@ body {
     color: var(--gray);
 }
 
+/* Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    gap: 3rem;
+}
+
+.project-card {
+    background: var(--white);
+    padding: 4rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(244, 132, 95, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(244, 132, 95, 0.1);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.project-title {
+    font-family: var(--header-font);
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.4rem;
+}
+
+.project-tagline {
+    font-family: var(--mono-font);
+    font-size: 1.3rem;
+    color: var(--gray);
+}
+
+.project-links {
+    display: flex;
+    gap: 1.2rem;
+    flex-shrink: 0;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid rgba(244, 132, 95, 0.3);
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.project-link:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.project-desc {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.project-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.project-features li {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text-color);
+}
+
+.project-features li i {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    flex-shrink: 0;
+}
+
+.project-stack {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .project-grid { grid-template-columns: 1fr; }
+}
+
 /* Experience */
 .exp-item {
     background: var(--white);
