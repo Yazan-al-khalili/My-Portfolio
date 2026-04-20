@@ -102,3 +102,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 if (textElement) {
     typeEffect();
 }
+
+// Video Modal
+const videoModal = document.getElementById('videoModal');
+const demoIframe = document.getElementById('demoIframe');
+const DEMO_SRC = 'https://www.youtube.com/embed/DKcHe5oy-MM';
+
+function openVideoModal() {
+    demoIframe.src = DEMO_SRC;
+    videoModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeVideoModal() {
+    videoModal.classList.remove('open');
+    demoIframe.src = '';
+    document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && videoModal.classList.contains('open')) {
+        closeVideoModal();
+    }
+});

@@ -186,7 +186,8 @@
                         </div>
                     </div>
                     <p class="project-desc">
-                        A full-stack personal finance tracker that connects to a real Swedish bank (SEB) via the Enable Banking API. Fetches live transactions, categorizes them automatically, and visualizes spending by month and category. Includes a Try Demo mode with realistic mock data for visitors.
+                        A full-stack personal finance tracker connected to a real Swedish bank (SEB) via the Enable Banking API. Fetches live transactions, categorizes them automatically, and visualizes spending by month and category. Try the live demo pre-loaded with realistic mock Swedish data — the SEB bank connection is linked to my personal accounts only.
+                        <span class="project-video-note"><i class="bx bx-play-circle"></i> The demo video shows me authenticating with my real bank via BankID and watching live transactions sync in real time.</span>
                     </p>
                     <ul class="project-features">
                         <li><i class="bx bx-check"></i> OAuth2-style bank authentication via BankID (Sweden)</li>
@@ -195,11 +196,16 @@
                         <li><i class="bx bx-check"></i> Doughnut &amp; bar charts with savings rate progress bar</li>
                         <li><i class="bx bx-check"></i> Demo mode with mock Swedish transactions</li>
                     </ul>
-                    <div class="project-stack">
-                        <span class="badge mini">Vue</span>
-                        <span class="badge mini">FastAPI</span>
-                        <span class="badge mini">Chart.js</span>
-                        <span class="badge mini">Tailwind</span>
+                    <div class="project-card-footer">
+                        <div class="project-stack">
+                            <span class="badge mini"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="">Vue</span>
+                            <span class="badge mini"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="">FastAPI</span>
+                            <span class="badge mini"><i class="bx bx-bar-chart-alt-2"></i>Chart.js</span>
+                            <span class="badge mini"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="">Tailwind</span>
+                        </div>
+                        <button class="btn-watch-demo" onclick="openVideoModal()">
+                            <i class="bx bx-play-circle"></i> Watch Demo
+                        </button>
                     </div>
                 </div>
 
@@ -238,10 +244,10 @@
                         </div>
 
                         <div class="exp-skills">
-                            <span class="badge mini">Git</span>
-                            <span class="badge mini">JavaScript</span>
-                            <span class="badge mini">React</span>
-                            <span class="badge mini">TypeScript</span>
+                            <span class="badge mini"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">Git</span>
+                            <span class="badge mini"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
+                            <span class="badge mini"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="">React</span>
+                            <span class="badge mini"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="">TypeScript</span>
                         </div>
                     </div>
                 </div>
@@ -282,6 +288,28 @@
             </div>
         </div>
     </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Saldo demo video">
+        <div class="video-modal-backdrop" onclick="closeVideoModal()"></div>
+        <div class="video-modal-content">
+            <button class="video-modal-close" onclick="closeVideoModal()" aria-label="Close video">
+                <i class="bx bx-x"></i>
+            </button>
+            <div class="video-modal-frame">
+                <iframe
+                    id="demoIframe"
+                    width="100%"
+                    height="100%"
+                    src=""
+                    title="Saldo — Personal Finance App Demo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
 
     <script src="animation.js"></script>
 </body>
